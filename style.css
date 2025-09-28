@@ -1,0 +1,191 @@
+/* CSS chính cho KUBETVIP - Game LMHT */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    color: #ffd700;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+/* Game area styles */
+.game-area {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    border: 2px solid #ffd700;
+}
+
+/* Champion selection grid */
+.champion-select {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.champion {
+    background: #2a2a4e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+}
+
+.champion:hover {
+    transform: scale(1.05);
+    background: #3a3a5e;
+    border-color: #ffd700;
+}
+
+.champion h3 {
+    color: #ffd700;
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.champion p {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Selected champion display */
+#selected-champion {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid #ffd700;
+}
+
+/* Buttons */
+.btn {
+    background: #ffd700;
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background: #ffed4a;
+    transform: translateY(-2px);
+}
+
+/* 📱 RESPONSIVE CHO MOBILE */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    .game-area {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .champion-select {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .champion {
+        padding: 12px;
+    }
+    
+    .champion h3 {
+        font-size: 1rem;
+    }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .champion-select {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-area {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation for game elements */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.champion {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: #ffd700;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
