@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="vi">
+<head>
+     <link rel="icon" href="logochuan.jpg" type="image/png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ku Casino</title>
+  <style>
+    :root{
+      --primary:#ff7a00;
+      --dark:#222;
+      --muted:#f3f3f3;
+      --white:#fff;
+      --footer-bg:#2f2f2f;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, "Helvetica Neue", Arial, sans-serif;color:#222;background:#fff}
+
+    /* Header */
+    .topbar{background:var(--primary);color:#fff;padding:8px 16px;font-size:14px}
+    .header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #eee}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:40px}
+    .nav{display:flex;gap:14px;align-items:center}
+    .nav a{color:#333;text-decoration:none;padding:8px 10px;border-radius:6px}
+    .nav a:hover{background:#f3f3f3}
+
+    /* Hero */
+    .hero{
+      background: linear-gradient(90deg, rgba(32,22,10,.9), rgba(64,40,16,.9)), url('/images/hero.jpg') center/cover no-repeat;
+      color:var(--white);
+      padding:36px 24px;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+    /* If you prefer to set the hero image in HTML use inline style on .hero-bg */
+    .hero .content{max-width:740px}
+    .kicker{background:rgba(255,255,255,0.12);display:inline-block;padding:8px 12px;border-radius:20px;font-weight:600;margin-bottom:12px}
+    .hero h1{font-size:40px;margin:0 0 12px;line-height:1.05}
+    .hero p{margin:0 0 18px;opacity:0.95}
+    .cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700}
+    .hero .visual{margin-left:auto;max-width:360px}
+    .hero .card{
+      background:rgba(255,255,255,0.08);
+      border-radius:12px;padding:14px;
+      display:flex;flex-direction:column;align-items:center;gap:10px;
+    }
+    .slot-img{width:100%;height:180px;background:#ddd;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .slot-img img{width:100%;height:100%;object-fit:cover}
+
+    /* Quick features row */
+    .features{display:flex;gap:12px;padding:18px 20px;background:var(--muted);align-items:center;justify-content:center;flex-wrap:wrap}
+    .feature{background:#fff;padding:10px 14px;border-radius:10px;min-width:160px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+
+    /* Sidebar floating contact */
+    .floating-contacts{
+      position:fixed;right:12px;top:150px;display:flex;flex-direction:column;gap:8px;z-index:60;
+    }
+    .floating-contacts a{display:flex;align-items:center;gap:8px;background:#fff;padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-decoration:none;color:#222;font-weight:600}
+    .floating-contacts img{width:28px;height:28px;object-fit:contain}
+
+    /* Footer multi-column */
+    footer{background:var(--footer-bg);color:#ddd;padding:28px 24px;margin-top:30px}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;max-width:1200px;margin:0 auto}
+    .footer-col h4{color:#fff;margin:0 0 10px;font-size:15px}
+    .qr{background:#fff;padding:8px;border-radius:8px;display:inline-block}
+    .legal{margin-top:20px;text-align:center;color:#aaa;font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero .visual{width:100%;margin-left:0}
+      .floating-contacts{display:none}
+    }
+ .hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    animation: changeBackground 9s infinite steps(1);
+    /* steps(1) ← QUAN TRỌNG: chuyển đổi dứt khoát */
+}
+
+@keyframes changeBackground {
+    0%, 25% { background-image: url("bìa 1.jpg"); }
+    26%, 50% { background-image: url("bìa 2.jpg"); }
+    51%, 75% { background-image: url("bìa 3.jpg"); }
+    76%, 100% { background-image: url("bìa 4.jpg") ;}
+}
+  </style>
+</head>
+<body>
+   <marquee behavior="scroll" direction="left" style="background: #333; color: white; padding: 10px;">
+        KHÔNG TÌM LINK TRÊN GOOGLE, ĐĂNG NHẬP THƯỜNG XUYÊN ĐỔI MẬT KHẨU ,
+    </marquee> 
+  <div class="topbar">
+    CHỈ ĐĂNG NHẬP TẠI LINK ĐƯỢC CUNG CẤP 
+  </div>
+
+  <header class="header">
+    <div class="logo">
+      <!-- Thay ảnh logo: /images/logo.png -->
+      <img src="logochuan.jpg" alt="Logo" onerror="this.style.display='none'">
+      <div>
+        <div style="font-weight:800">KU CASINO </div>
+        <div style="font-size:12px;color:#666">Mô tả ngắn</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#">KU Siêu HOT</a>
+      <a href="#">Thể thao</a>
+      <a href="#">Live Casino</a>
+      <a href="#">Games</a>
+      <a href="https://www.hytw3596.vip/"target="_blank" style="background:var(--primary);color:#fff">Đăng ký</a>
+      <a href="https://www.hytw3596.vip/"target="_blank" style="border:1px solid #eee;padding:8px 12px;border-radius:8px">Đăng nhập</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="content">
+      <div class="kicker">KU CASINO • 3D GAMES</div>
+      <h1>Chơi game — Quay thưởng<br><span style="color:var(--primary)">Hàng tỷ tiền mặt</span></h1>
+      <p>Văn bản mô tả ngắn, highlight ưu đãi và kêu gọi người dùng hành động. Bạn có thể thay bằng nội dung tùy ý.</p>
+      <a class="cta" href="#detail">Chi tiết sự kiện ▶</a>
+    </div>
+
+    <div class="visual">
+      <div class="card">
+        <!-- Ảnh mô tả (thay /images/slot.jpg hoặc url) -->
+        <div class="slot-img">
+          <img src="jackpot.jpg" alt="slot" onerror="this.style.background='#ccc'">
+        </div>
+        <div style="font-weight:700">Jackpot: <span style="color:var(--primary)">1.930.399,4</span></div>
+      </div>
+    </div>
+  </section>
+ <marquee behavior="scroll" direction="left" style="background: #333; color: white; padding: 10px;">
+         KHÔNG TÌM LINK TRÊN GOOGLE, ĐĂNG NHẬP THƯỜNG XUYÊN ĐỔI MẬT KHẨU ,
+    </marquee> 
+  <!-- Features -->
+  <div class="features" aria-hidden="false">
+    <div class="feature">Quay thưởng tuần</div>
+    <div class="feature">Live dealer</div>
+    <div class="feature">Đối tác LaLiga</div>
+    <div class="feature">Phim ảnh miễn phí</div>
+  </div>
+
+  <!-- Main content placeholder -->
+  <main style="max-width:1200px;margin:18px auto;padding:0 16px">
+    <section style="padding:18px 0">
+      <h3 id="detail">Các trò chơi & dịch vụ</h3>
+      <p style="color:#666">Khu vực liệt kê dịch vụ (thể thao, casino, game 3D, xóc đĩa...).</p>
+      <!-- Ở đây bạn có thể thêm card, carousel, bảng, v.v -->
+    </section>
+  </main>
+
+  <!-- Floating contacts (right side) -->
+  <div class="floating-contacts" aria-hidden="false">
+    <!-- Thay src bằng icon/ảnh đường dẫn tới services -->
+    <a href="https://t.me/suportKb234" target="_blank"><img src="Telegram_2019_Logo.jpg" alt=""> Telegram</a>
+    <a href="#"><img src="line-app-logo-line-app-symbol-line-icon-free-free-vector.jpg" alt=""> Line</a>
+    <a href="#"><img src="images.png" alt=""> Viber</a>
+    <a href="#"><img src="phone.png" alt=""> Điện thoại</a>
+    <a href="#"><img src="commenting.png" alt=""> Để lại lời nhắn </a>
+    <a href="#"><img src="icon_fire.gif" alt=""> Khiếu nại </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Thể thao</h4>
+        <ul style="list-style:none;padding:0;margin:0;color:#bbb">
+          <li>KU</li><li>SABA</li><li>AI</li><li>CMD</li><li>PANDA</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Casino</h4>
+        <ul style="list-style:none;padding:0;margin:0;color:#bbb">
+          <li>KU</li><li>PA</li><li>WM</li><li>GPI</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Games</h4>
+        <ul style="list-style:none;padding:0;margin:0;color:#bbb">
+          <li>3D</li><li>BNG</li><li>CQ9</li><li>DS</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <ul style="list-style:none;padding:0;margin:0;color:#bbb">
+          <li>Trợ giúp</li><li>Thông báo</li><li>Giới thiệu</li>
+        </ul>
+        <div style="margin-top:10px">
+          <div class="qr"><img src="anh phu.jpg" alt="QR" style="width:80px;height:80px;display:block"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal">© 2025 Tên Công Ty • Ghi chú pháp lý / Liên hệ</div>
+  </footer>
+
+  <script>
+    // Small helper: change hero background easily via JS (optional)
+    // Bạn có thể set document.getElementById('hero').style.backgroundImage = "url('/images/hero.jpg')";
+  </script>
+</body>
+</html>
